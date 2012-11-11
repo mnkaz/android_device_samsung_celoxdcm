@@ -11,9 +11,6 @@ vendor/etc/fallback_fonts.xml
 fonts/MTLmr3m.ttf
 fonts/truetypeEmoji.ttf
 
-# DivX
-/lib/libDivxDrm.so
-
 # Wi-Fi
 etc/wifi/nvram_net.txt_murata
 etc/wifi/nvram_mfg.txt_murata
