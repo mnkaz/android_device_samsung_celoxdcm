@@ -1,4 +1,4 @@
-# system.prop for SGH-T727
+# system.prop for SC-03D
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so
@@ -78,3 +78,5 @@ persist.radio.add_power_save=1
 # System proverty snapshot disable
 persist.radio.snapshot_disabled=1
 
+# docomo
+ro.config.libemoji=libemoji_docomo.so

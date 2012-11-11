@@ -29,16 +29,16 @@ USE_CAMERA_STUB := true
 -include device/samsung/celox-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/skyrocket/BoardConfigVendor.mk
+-include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := skyrocket
+TARGET_BOOTLOADER_BOARD_NAME := celoxdcm
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-I727,skyrocket
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogenmod_skyrocket_defconfig
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
+TARGET_KERNEL_CONFIG        := cyanogenmod_celoxdcm_defconfig
+TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-dcm
 
 # cat /proc/emmc
 #dev:        size     erasesize name
