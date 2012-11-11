@@ -29,15 +29,15 @@ USE_CAMERA_STUB := true
 -include device/samsung/msm8660-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/skyrocket/BoardConfigVendor.mk
+-include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := skyrocket
+TARGET_BOOTLOADER_BOARD_NAME := SC-03D
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGHI727,SGH-I727,hercules,skyrocket
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Kernel
-TARGET_KERNEL_CONFIG        := cyanogenmod_skyrocket_defconfig
+TARGET_KERNEL_CONFIG        := cyanogenmod_celoxdcm_defconfig
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true
 BOARD_KERNEL_BASE           := 0x40400000

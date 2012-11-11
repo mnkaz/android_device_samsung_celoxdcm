@@ -20,10 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_COPY_FILES += device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/skyrocket/skyrocket-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/skyrocket/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/celoxdcm/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -31,28 +31,28 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/skyrocket/ramdisk/init.qcom.rc:root/init.qcom.rc \
-    device/samsung/skyrocket/ramdisk/init.qcom.sh:root/init.qcom.sh \
-    device/samsung/skyrocket/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
-    device/samsung/skyrocket/ramdisk/init.qcom.usb.sh:root/init.qcom.usb.sh \
-    device/samsung/skyrocket/ramdisk/init.target.rc:root/init.target.rc \
-    device/samsung/skyrocket/ramdisk/ueventd.rc:root/ueventd.rc \
-    device/samsung/skyrocket/ramdisk/init.emmc.rc:root/init.emmc.rc
+    device/samsung/celoxdcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/samsung/celoxdcm/ramdisk/init.qcom.sh:root/init.qcom.sh \
+    device/samsung/celoxdcm/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/celoxdcm/ramdisk/init.qcom.usb.sh:root/init.qcom.usb.sh \
+    device/samsung/celoxdcm/ramdisk/init.target.rc:root/init.target.rc \
+    device/samsung/celoxdcm/ramdisk/ueventd.rc:root/ueventd.rc \
+    device/samsung/celoxdcm/ramdisk/init.emmc.rc:root/init.emmc.rc
 
 # BT firmware
 PRODUCT_COPY_FILES += \
-    device/samsung/skyrocket/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
+    device/samsung/celoxdcm/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
 # Vold
 PRODUCT_COPY_FILES += \
-    device/samsung/skyrocket/vold.fstab:system/etc/vold.fstab
+    device/samsung/celoxdcm/vold.fstab:system/etc/vold.fstab
 
 # common msm8660
 $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)
 
 $(call inherit-product, frameworks/base/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/skyrocket/skyrocket-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
 
 #WIFI_BAND := 802_11_ABG
 #$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)

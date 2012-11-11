@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/skyrocket/full_skyrocket.mk)
+$(call inherit-product, device/samsung/celoxdcm/full_celoxdcm.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -13,6 +13,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I727 TARGET_DEVICE=SGH-I727 BUI
 
 TARGET_BOOTANIMATION_NAME := vertical-480x800
 
-PRODUCT_NAME := cm_skyrocket
-PRODUCT_DEVICE := skyrocket
+PRODUCT_NAME := cm_celoxdcm
+PRODUCT_DEVICE := celoxdcm
 

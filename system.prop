@@ -1,4 +1,4 @@
-# system.prop for SGH-T727
+# system.prop for SC-03D
 #
 
 rild.libpath=/system/lib/libril-qc-qmi-1.so
@@ -107,3 +107,4 @@ com.qc.hdmi_out=true
 ro.hdmi.enable=true
 debug.sf.hw=1
 debug.composition.type=dyn
+ro.config.libemoji=libemoji_docomo.so
