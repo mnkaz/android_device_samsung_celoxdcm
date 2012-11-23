@@ -23,6 +23,11 @@ media.stagefright.enable-fma2dp=false
 media.stagefright.enable-aac=true
 media.stagefright.enable-qcp=true
 
+ro.vendor.extension_library=/system/lib/libqc-opt.so
+
+lpa.decode=true
+lpa.use-stagefright=true
+
 #
 # system props for the data modules
 #
@@ -52,6 +57,12 @@ ro.opengles.version=131072
 #
 ro.ril.transmitpower=true
 
+# system prop for adb_notification
+persist.adb.notify=0
+
+# system prop for usb_notification
+persist.usb_mass_storage.notify=0
+
 #
 # Needed to match behavior of stock rom
 #      D/PHONE: mDoesRilSendMultipleCallRing=false
@@ -66,6 +77,9 @@ ro.sf.lcd_density=240
 ro.telephony.ril_class=SamsungQualcommUiccRIL
 telephony.lteOnGsmDevice=1
 
+# Property to allow IccCard to properly handle APPSTATE_SUBSCRIPTION_PERSO
+ro.telephony.ril.v3=qcomuiccstack
+
 # System property for SIM
 persist.radio.apm_sim_not_pwdn=1
 
@@ -78,5 +92,19 @@ persist.radio.add_power_save=1
 # System proverty snapshot disable
 persist.radio.snapshot_disabled=1
 
-# docomo
+# notify vold we have internal and external sd
+ro.additionalmounts=/mnt/emmc
+ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
+
+# set mass storage to default
+persist.sys.usb.config=mass_storage
+
+# qcom display options
+debug.enabletr=true
+com.qc.hardware=true
+ro.sf.compbypass.enable=1
+com.qc.hdmi_out=true
+ro.hdmi.enable=true
+debug.sf.hw=1
+debug.composition.type=dyn
 ro.config.libemoji=libemoji_docomo.so

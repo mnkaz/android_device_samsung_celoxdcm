@@ -27,6 +27,13 @@ PRODUCT_PACKAGES := \
 
 BOARD_HAVE_NFC := true
 
+# celoxdcm Ramdisk
+PRODUCT_COPY_FILES += \
+    device/samsung/celoxdcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/samsung/celoxdcm/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/celoxdcm/ramdisk/init.prop.sh:root/init.prop.sh \
+    device/samsung/celoxdcm/ramdisk/initlogo.rle:root/initlogo.rle
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from celoxdcm device

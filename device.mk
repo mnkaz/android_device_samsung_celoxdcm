@@ -22,7 +22,14 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/celoxdcm/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
+    device/samsung/celoxdcm/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/samsung/celoxdcm/ramdisk/init.qcom.sh:root/init.qcom.sh \
     device/samsung/celoxdcm/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/celoxdcm/ramdisk/init.qcom.usb.sh:root/init.qcom.usb.sh \
+    device/samsung/celoxdcm/ramdisk/init.target.rc:root/init.target.rc \
+    device/samsung/celoxdcm/ramdisk/init.prop.sh:root/init.prop.sh \
+    device/samsung/celoxdcm/ramdisk/ueventd.rc:root/ueventd.rc \
+    device/samsung/celoxdcm/ramdisk/init.emmc.rc:root/init.emmc.rc
 
 # BT firmware
 PRODUCT_COPY_FILES += \
