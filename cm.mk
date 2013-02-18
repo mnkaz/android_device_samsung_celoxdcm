@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/hercules/full_hercules.mk)
+$(call inherit-product, device/samsung/celoxdcm/full_celoxdcm.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -9,10 +9,10 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T989 TARGET_DEVICE=SGH-T989 BUILD_FINGERPRINT="samsung/SGH-T989/SGH-T989:4.0.4/IMM76D/UVLI4:user/release-keys" PRIVATE_BUILD_DESC="SGH-T989-user 4.0.4 IMM76D UVLI4 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SC-03D TARGET_DEVICE=SC-03D BUILD_FINGERPRINT="samsung/SC-03D/SC-03D:4.0.4/IMM76D/OMLPH:user/release-keys" PRIVATE_BUILD_DESC="SC-03D-user 4.0.4 IMM76D OMLPH release-keys"
 
 TARGET_BOOTANIMATION_NAME := 480
 
-PRODUCT_NAME := cm_hercules
-PRODUCT_DEVICE := hercules
+PRODUCT_NAME := cm_celoxdcm
+PRODUCT_DEVICE := celoxdcm
 

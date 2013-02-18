@@ -15,20 +15,20 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/hercules/hercules-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hercules/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/celoxdcm/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/hercules/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/samsung/celoxdcm/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
 
 # BT firmware
 PRODUCT_COPY_FILES += \
-    device/samsung/hercules/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
+    device/samsung/celoxdcm/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
 # Inherit from celox-common
 $(call inherit-product, device/samsung/celox-common/celox-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/hercules/hercules-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
