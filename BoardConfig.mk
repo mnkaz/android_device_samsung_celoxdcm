@@ -31,7 +31,7 @@ USE_CAMERA_STUB := true
 # inherit from the proprietary version
 -include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := celoxdcm
+TARGET_BOOTLOADER_BOARD_NAME := MSM8660_SURF
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
