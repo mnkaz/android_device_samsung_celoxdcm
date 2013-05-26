@@ -1,4 +1,3 @@
-#
 # system.prop for SC-03D
 #
 
@@ -18,7 +17,6 @@ ril.subscription.types=NV,RUIM
 dev.pm.dyn_samplingrate=1
 
 #system props for the MM modules
-
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-fma2dp=false
