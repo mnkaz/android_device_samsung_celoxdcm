@@ -43,6 +43,9 @@ TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-dcm
 # Assert minimum baseband version
 TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
 
+# Assert minimum baseband version
+TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
+
 # cat /proc/emmc
 #dev:        size     erasesize name
 #mmcblk0p22: 00fffc00 00000200 "recovery"
