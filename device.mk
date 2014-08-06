@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,26 +14,19 @@
 # limitations under the License.
 #
 
-## (2) Also get non-open-source specific aspects if available
+# Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
 
-## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/celoxdcm/overlay
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/celoxdcm/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    $(LOCAL_PATH)/ramdisk/init.qcom.usb.rc:root/init.qcom.usb.rc
 
-# BT firmware
+# Bluetooth
 PRODUCT_COPY_FILES += \
-    device/samsung/celoxdcm/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
-
-# Default Locale
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.product.locale.language=ja \
-    ro.product.locale.region=JP
+    $(LOCAL_PATH)/firmware/bcm4330B1.hcd:system/etc/firmware/bcm4330B1.hcd
 
 # Inherit from celox-common
 $(call inherit-product, device/samsung/celox-common/celox-common.mk)
-
-$(call inherit-product-if-exists, vendor/samsung/celoxdcm/celoxdcm-vendor.mk)
