@@ -19,7 +19,7 @@
 -include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
 # Assert
-TARGET_BOARD_INFO_FILE ?= device/samsung/hercules/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Kernel
