@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/skyrocket/full_skyrocket.mk)
+$(call inherit-product, device/samsung/celoxdcm/full_celoxdcm.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -9,8 +9,8 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I727 TARGET_DEVICE=SGH-I727 BUILD_FINGERPRINT="samsung/SGH-I727/SGH-I727:4.1.2/JZO54K/I727UCMC1:user/release-keys" PRIVATE_BUILD_DESC="SGH-I727-user 4.1.2 JZO54K I727UCMC1 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SC-03D TARGET_DEVICE=SC-03D BUILD_FINGERPRINT="samsung/SC-03D/SC-03D:4.4/KRT16M/OMLPH:user/release-keys" PRIVATE_BUILD_DESC="SC-03D-user 4.4 KRT16M OMLPH release-keys"
 
-PRODUCT_NAME := cm_skyrocket
-PRODUCT_DEVICE := skyrocket
+PRODUCT_NAME := cm_celoxdcm
+PRODUCT_DEVICE := celoxdcm
 
