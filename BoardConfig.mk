@@ -16,18 +16,18 @@
 -include device/samsung/celox-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/skyrocket/BoardConfigVendor.mk
+-include vendor/samsung/celoxdcm/BoardConfigVendor.mk
 
 # Assert
-TARGET_BOARD_INFO_FILE ?= device/samsung/skyrocket/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := SGH-I727,skyrocket
+TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
+TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/skyrocket/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celoxdcm/bluetooth
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_skyrocket_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/msm8660
+TARGET_KERNEL_CONFIG := cyanogenmod_celoxdcm_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-dcm
 #KERNEL_TOOLCHAIN_PREFIX := arm-linux-gnueabihf-
 #KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86/toolchain/linaro-4.7-12.10/bin/"
 
