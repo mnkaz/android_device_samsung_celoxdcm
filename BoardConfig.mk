@@ -22,9 +22,6 @@
 TARGET_BOARD_INFO_FILE ?= device/samsung/celoxdcm/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := SC-03D,celoxdcm
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celoxdcm/bluetooth
-
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_celoxdcm_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8660-dcm
@@ -39,5 +36,5 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 627048448
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 20044333056
 TARGET_USERIMAGES_USE_EXT4 := true
 
-# Resolution
-DEVICE_RESOLUTION := 480x800
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/celoxdcm/bluetooth
